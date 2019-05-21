@@ -1,0 +1,14 @@
+Looking for git in: git
+Using git 2.20.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /root/Desktop/Rails_app
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: tham số chưa rõ ràng “master”: chưa biết điểm xem xét hay đường dẫn không trong cây làm việc.
+Dùng “--” để ngăn cách các đường dẫn khỏi điểm xem xét, như thế này:
+“git <lệnh> [<điểm xem xét>…] -- [<tập tin>…]”
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
