@@ -1,17 +1,28 @@
-<h1>POSTS BY
-    <%= @user.name %>
-</h1>
 
-<% @microposts.each do |post| %>
-    <p>
-        <strong>Content: </strong>
-        <%= post.content %>
-    </p>
+<div class="container">
+    <br>
+    <h1>POSTS BY
+        <%= @user.name %>
+    </h1>
+    <hr>
 
-    <p>
-        <strong>ID: </strong>
-        <%= post.user_id %>
-    </p>
-<% end %>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Post ID</th>
+                <th>Post Content</th>
+            </tr>
+        </thead>
 
-<%= link_to 'Back', user_path %>
+        <tbody>
+            <% @microposts.each do |post| %>
+                <tr>
+                <td><%= post.user_id %></td>
+                <td><%= post.content %></td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+
+    <%= link_to 'Back', user_path %>
+</div>

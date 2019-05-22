@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Content:</strong>
-  <%= @micropost.content %>
-</p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @micropost.user_id %>
-</p>
+  <p>
+    <strong>Content:</strong>
+    <%= @micropost.content %>
+  </p>
 
-<%= link_to 'Edit', edit_micropost_path(@micropost) %> |
-<%= link_to 'Back', microposts_path %>
+  <p>
+    <strong>User:</strong>
+    <%= @micropost.user_id %>
+  </p>
+
+  <%= link_to 'Edit', edit_micropost_path(@micropost) %> |
+  <%= link_to 'Back', microposts_path %>
+</div>

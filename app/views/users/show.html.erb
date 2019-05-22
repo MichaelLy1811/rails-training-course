@@ -1,20 +1,25 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div class="container">
+  <br>
+  <p>
+    <strong>Name:</strong>
+    <%= @user.name %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.pass %>
-</p>
+  <p>
+    <strong>Password:</strong>
+    <%= @user.pass %>
+  </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %> | 
-<%= link_to 'Show posts', microposts_user_path %>
+  <%= link_to 'Edit', edit_user_path(@user), class: "btn btn-warning" %> |
+  <%= link_to 'Show posts', microposts_user_path, class: "btn btn-dark" %>
+  <br>
+  <br>
+  <%= link_to 'Back', users_path %> 
+  
+</div>
