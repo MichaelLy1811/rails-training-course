@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2019_05_20_125731) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "tel", default: "123456789"
   end
 
   create_table "microposts", force: :cascade do |t|
